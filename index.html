@@ -68,8 +68,10 @@ body{font-family:'Nunito',sans-serif;background:var(--n1);overflow-x:hidden;curs
 @keyframes spinRing{to{transform:rotate(360deg);}}
 .hero-photo{width:170px;height:170px;border-radius:50%;object-fit:cover;object-position:top;position:relative;z-index:2;border:3px solid rgba(255,255,255,.08);}
 .hero-glow{position:absolute;inset:-30px;border-radius:50%;background:radial-gradient(circle,rgba(0,180,216,.35),transparent 70%);animation:glowP 2.5s ease-in-out infinite;z-index:0;}
-@keyframes glowP{0%,100%{transform:scale(1);opacity:.6;}50%{transform:scale(1.25);opacity:1;}}
-.hero-tag{z-index:2;position:relative;font-size:.73rem;font-weight:900;letter-spacing:.22em;text-transform:uppercase;color:var(–au1);background:rgba(0,245,212,.07);padding:.4rem 1.2rem;border-radius:50px;margin-bottom:1.2rem;border:1px solid rgba(0,245,212,.18);}
+@keyframes glowP{0%,100%{transform:scale(1);opacity:.6;}50%{transform:scale(1.25);opacity:1;}
+.hero-tag{z-index:2;position:relative;font-size:.73rem;font-weight:900;letter-spacing:.22em;text-transform:uppercase;color: var(--au1);
+filter: brightness(2.5);
+text-shadow: 0 0 6px rgba(255,255,255,0.5);background:rgba(0,245,212,.07);padding:.4rem 1.2rem;border-radius:50px;margin-bottom:1.2rem;border:1px solid rgba(0,245,212,.18);}
 .hero-h{font-family:‘Playfair Display’,serif;font-size:clamp(2.5rem,12vw,6rem);font-weight:900;line-height:1.1;z-index:2;position:relative;color:#ffffff !important;text-shadow:0 0 40px rgba(0,180,216,.5);}
 .hero-h .nm{display:block;font-style:italic;background:linear-gradient(135deg,#00f5d4,#00b4d8,#ffffff) !important;-webkit-background-clip:text !important;-webkit-text-fill-color:transparent !important;background-clip:text !important;font-size:1.15em;filter:drop-shadow(0 0 30px rgba(0,245,212,.8));margin-top:.2rem;}
 .hero-sub{z-index:2;position:relative;font-size:clamp(.95rem,3.5vw,1.2rem);color:rgba(255,255,255,.85);font-weight:600;margin-top:.8rem;}
